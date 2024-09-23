@@ -1,5 +1,5 @@
 // Time complexity: 𝑂(n log n) - Worst scenario can be 𝑂(nˆ2)
-// Space complexity: 𝑂(n log n)
+// Space complexity: 𝑂(log n)
 // Stability: No
 // Recusion: Yes
 // In-place: Yes

@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'Sorting/bubblesort.dart';
 import 'Sorting/insertionsort.dart';
 import 'Sorting/mergesort.dart';
 import 'miscellaneous/fibonnacci.dart';
@@ -56,6 +57,16 @@ void main() {
   insertWatch2.stop();
 
   print("#INSERTIONSORT sorted in ${insertWatch2.elapsedMilliseconds}ms");
+
+  //############## BUBBLESORT #####
+
+  final List<int> bubbleList = [...randomBigList];
+
+  final bubbleWatch2 = Stopwatch()..start();
+  bubblesort(bubbleList);
+  bubbleWatch2.stop();
+
+  print("#BUBBLESORT sorted in ${bubbleWatch2.elapsedMilliseconds}ms");
 
   //############## FIBON #####
 
