@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'Sorting/bubblesort.dart';
+import 'Sorting/heapsort.dart';
 import 'Sorting/insertionsort.dart';
 import 'Sorting/mergesort.dart';
 import 'miscellaneous/fibonnacci.dart';
@@ -67,6 +68,16 @@ void main() {
   bubbleWatch2.stop();
 
   print("#BUBBLESORT sorted in ${bubbleWatch2.elapsedMilliseconds}ms");
+
+  //############## HEAPSORT #####
+
+  final List<int> heapList = [...randomBigList];
+
+  final heapWatch2 = Stopwatch()..start();
+  heapsort(heapList);
+  heapWatch2.stop();
+
+  print("#HEAPSORT sorted in ${heapWatch2.elapsedMilliseconds}ms");
 
   //############## FIBON #####
 
