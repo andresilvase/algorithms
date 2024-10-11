@@ -1,12 +1,12 @@
 import 'dart:math';
 
-import 'Sorting/bubblesort.dart';
-import 'Sorting/heapsort.dart';
-import 'Sorting/insertionsort.dart';
-import 'Sorting/mergesort.dart';
-import 'miscellaneous/fibonnacci.dart';
-import 'miscellaneous/memoiazation.dart';
-import 'Sorting/quicksort.dart';
+import 'Sorting/Dart/bubblesort.dart';
+import 'Sorting/Dart/heapsort.dart';
+import 'Sorting/Dart/insertionsort.dart';
+import 'Sorting/Dart/mergesort.dart';
+import 'miscellaneous/Dart/fibonnacci.dart';
+import 'miscellaneous/Dart/memoiazation.dart';
+import 'Sorting/Dart/quicksort.dart';
 
 void main() {
   //############## QUICK SORT #####
