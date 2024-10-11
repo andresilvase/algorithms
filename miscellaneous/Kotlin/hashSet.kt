@@ -25,7 +25,3 @@ class MyHashSet() {
         return bucket.contains(key)
     }
 }
-
-fun main() {
-    print(5 / 2)
-}
