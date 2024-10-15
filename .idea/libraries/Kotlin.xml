@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Kotlin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/miscellaneous/Kotlin/heapSort.jar!/" />
+      <root url="jar://$PROJECT_DIR$/miscellaneous/Kotlin/factorial.jar!/" />
+      <root url="jar://$PROJECT_DIR$/miscellaneous/Kotlin/hashSet.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,7 +1,7 @@
 class MyHashSet() {
-    val buckets = Array(2) { ArrayList<Int>() }
+    val buckets = Array(6) { ArrayList<Int>() }
 
-    fun hashFun(key: Int): Int = key % 2
+    fun hashFun(key: Int): Int = key % 6
 
     fun add(key: Int) {
         val bucket = buckets[hashFun(key)]
@@ -22,6 +22,8 @@ class MyHashSet() {
     fun contains(key: Int): Boolean {
         val bucket = buckets[hashFun(key)]
 
-        return bucket.contains(key)
+        quickSort(bucket, 0, bucket.size - 1)
+
+        return binarySearch(bucket, key) != -1
     }
 }
