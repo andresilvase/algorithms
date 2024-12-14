@@ -7,6 +7,7 @@ import 'Sorting/Dart/mergesort.dart';
 import 'miscellaneous/Dart/fibonnacci.dart';
 import 'miscellaneous/Dart/memoiazation.dart';
 import 'Sorting/Dart/quicksort.dart';
+import 'Sorting/Dart/quicksort2.dart';
 
 void main() {
   //############## QUICK SORT #####
