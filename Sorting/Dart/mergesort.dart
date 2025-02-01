@@ -5,6 +5,8 @@
 // In-place: No
 // DC: Yes
 
+import 'dart:math';
+
 List<int> mergeSort(List<int> arr) {
   final arrLen = arr.length;
 
@@ -49,4 +51,19 @@ List<int> merge(List<int> arr, List<int> left, List<int> right) {
   }
 
   return arr;
+}
+
+void main() {
+  final List<int> randomBigList = List.generate(
+    Random().nextInt(Random().nextInt(100000)),
+    (i) => i * Random().nextInt(10000),
+  );
+
+  final List<int> mergeList = [...randomBigList];
+
+  final mergeWatch2 = Stopwatch()..start();
+  mergeSort(mergeList);
+  mergeWatch2.stop();
+
+  print("#MERGESORT sorted in ${mergeWatch2.elapsedMilliseconds}ms");
 }

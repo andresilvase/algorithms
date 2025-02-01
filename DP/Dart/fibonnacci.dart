@@ -13,3 +13,7 @@ int fibn(int n) {
   print("#FIBO $n: $b runs in ${stopwatch.elapsedMilliseconds}ms");
   return b;
 }
+
+void main() {
+  fibn(7);
+}

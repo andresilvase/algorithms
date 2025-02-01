@@ -5,6 +5,8 @@
 // In-place: Yes
 // DC: No
 
+import 'dart:math';
+
 bool worthyCallHeapify(int index, int listLength) {
   return listLength > 2 * index + 2 || listLength > 2 * index + 1;
 }
@@ -56,4 +58,19 @@ void swap(List<int> list, int i, int j) {
   int temp = list[i];
   list[i] = list[j];
   list[j] = temp;
+}
+
+void main() {
+  final List<int> randomBigList = List.generate(
+    Random().nextInt(Random().nextInt(100000)),
+    (i) => i * Random().nextInt(10000),
+  );
+
+  final List<int> heapList = [...randomBigList];
+
+  final heapWatch2 = Stopwatch()..start();
+  heapsort(heapList);
+  heapWatch2.stop();
+
+  print("#HEAPSORT sorted in ${heapWatch2.elapsedMilliseconds}ms");
 }

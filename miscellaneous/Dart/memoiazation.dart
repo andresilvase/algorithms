@@ -18,3 +18,10 @@ int memoizationFake(int num) {
   print("#MEMOIZATION $num runs in ${stopWatch.elapsedMilliseconds}ms");
   return num * num;
 }
+
+void main() {
+  memoizationFake(4);
+  memoizationFake(8);
+  memoizationFake(4);
+  memoizationFake(8);
+}

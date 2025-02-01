@@ -56,7 +56,7 @@ class MyHashMap {
 }
 
 // Testing
-let newHashMap: MyHashMap = MyHashMap()
+let newHashMap = MyHashMap()
 
 newHashMap.put(1, 1)
 newHashMap.put(2, 2)

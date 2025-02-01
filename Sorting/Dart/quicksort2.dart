@@ -1,4 +1,4 @@
-import './data.dart';
+import 'dart:math';
 
 List<int> quickSort2(List<int> list) {
   if (list.length <= 1) return list;
@@ -16,8 +16,19 @@ List<int> quickSort2(List<int> list) {
 }
 
 void main(List<String> args) {
-  final quickWatch = Stopwatch()..start();
-  quickSort2(fuckingBigList);
-  quickWatch.stop();
-  print("Dart Elapsed time ${quickWatch.elapsed.inSeconds} seconds.");
+  final List<int> randomBigList = List.generate(
+    Random().nextInt(Random().nextInt(100000)),
+    (i) => i * Random().nextInt(10000),
+  );
+
+  final List<int> list2 = [...randomBigList];
+  // final List<int> list2 = [8, 2, 90, 1, 33, 28, 55, 34];
+  // print("#QUICKSORT2: $list2");
+
+  final quickWatch2 = Stopwatch()..start();
+  quickSort2(list2);
+  // final sorted = quickSort2(list2);
+  quickWatch2.stop();
+
+  print("#QUICKSORT2 sorted in ${quickWatch2.elapsedMilliseconds}ms");
 }
